@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}>
-      <body className="dark min-h-full flex flex-col">
+      <body className="dark min-h-full flex flex-col bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat">
         <Navbar />
         {children}
         <Footer />
