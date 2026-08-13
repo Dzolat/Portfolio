@@ -11,7 +11,7 @@ export default function Navbar() {
         className="rounded-full"
         width={40}
         height={40}
-        src="/DIO.png"
+        src="/avatar.png"
         alt="Profile Picture"
       />
 
