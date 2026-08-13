@@ -7,25 +7,21 @@ import { Home, FolderOpen } from "lucide-react";
 export default function Navbar() {
   return (
     <nav className="fixed flex justify-around items-center w-full h-15 bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-lg">
-      <Image
-        className="rounded-full"
-        width={40}
-        height={40}
-        src="/avatar.png"
-        alt="Profile Picture"
-      />
+      <h1>
+        RealDzolat
+      </h1>
 
-      <ButtonGroup>
-        <Button variant="outline" render={<Link href="/" />}>
+      <div className="flex gap-2">
+        <Button className="rounded-full" variant="outline" render={<Link href="/" />}>
           <Home data-icon="inline-start" />
           Home
         </Button>
 
-        <Button variant="outline" render={<Link href="/projects" />}>
+        <Button className="rounded-full" variant="outline" render={<Link href="/projects" />}>
           <FolderOpen data-icon="inline-start" />
           Projects
         </Button>
-      </ButtonGroup>
+      </div>
 
       <Button
         render={<Link href="/contact" />}
