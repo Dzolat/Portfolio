@@ -3,28 +3,14 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { FaGithub } from "react-icons/fa";
 import { FolderOpen } from "lucide-react";
+import Profile from "./Profile";
 
 export default function Hero() {
   return (
     <main className="min-h-screen pt-24">
       <section className="max-w-7xl mx-auto px-8 pt-16 pb-4 flex items-center gap-20">
         {/* Left card */}
-        <div className="shrink-0">
-          <div className="w-[320px] rounded-3xl bg-white p-5">
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#FF0000] to-[#FDCF58]">
-              <Image
-                src="/avatar.png"
-                alt="RealDzolat"
-                width={320}
-                height={320}
-                className="w-full aspect-square object-cover"
-              />
-            </div>
-
-            <h2 className="mt-5 text-3xl font-bold text-gray-900">@RealDzolat</h2>
-            <p className="text-black/60">Developer</p>
-          </div>
-        </div>
+        <Profile />
 
         {/* Right side */}
         <div className="flex flex-col">
