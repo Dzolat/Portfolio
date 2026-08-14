@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ButtonGroup } from "@/components/ui/button-group";
 import { Button } from "@/components/ui/button";
-import { Home, FolderOpen } from "lucide-react";
+import { Home, FolderOpen, Info, Book } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -20,6 +18,16 @@ export default function Navbar() {
         <Button className="rounded-full" variant="outline" render={<Link href="/projects" />}>
           <FolderOpen data-icon="inline-start" />
           Projects
+        </Button>
+
+        <Button className="rounded-full" variant="outline" render={<Link href="/experience" />}>
+          <Book data-icon="inline-start" />
+          Experience
+        </Button>
+
+        <Button className="rounded-full" variant="outline" render={<Link href="/about" />}>
+          <Info data-icon="inline-start" />
+          About Me
         </Button>
       </div>
 
