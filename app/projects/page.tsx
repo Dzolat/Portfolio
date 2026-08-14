@@ -1,6 +1,8 @@
-export default function Projects()
+import Projects from "@/components/Projects"
+
+export default function ProjectsPage()
 {
     return (
-        <p>Placeholder</p>
+        <Projects />
     )
 }
