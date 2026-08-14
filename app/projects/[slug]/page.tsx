@@ -1,5 +1,8 @@
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
+import fs from "fs";
+import path from "path";
 
 export default async function ProjectPage({
   params,
@@ -16,17 +19,20 @@ export default async function ProjectPage({
     notFound();
   }
 
-  return (
-    <main className="min-h-screen pt-24">
-      <section className="mx-auto max-w-7xl px-8 py-16">
-        <h1 className="text-5xl font-bold">
-          {project.title}
-        </h1>
+  const markdownPath = path.join(
+    process.cwd(),
+    `public`,
+    `projects`,
+    `${slug}.md`
+  )
 
-        <p className="mt-4 text-white/60">
-          {project.description}
-        </p>
-      </section>
+  const markdown = fs.readFileSync(markdownPath, "utf8");
+
+  return (
+    <main className="min-h-screen pt-24 px-13">
+      <article className="pt-16 prose prose-invert max-w-none px-32">
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+      </article>
     </main>
   );
 }
