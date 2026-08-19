@@ -24,12 +24,7 @@ export default function Hero() {
 
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-[#74675b]">
             I build software, web apps and games.
-          </p>
-
-          <div className="flex gap-3 mt-4">
-            <Image width="40" height="40" src="/logos/C++.png" alt="C++" />
-            <Image width="40" height="40" src="/logos/C.png" alt="C" />
-          </div>
+          </p>  
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-8 flex flex-center items-center gap-12">
