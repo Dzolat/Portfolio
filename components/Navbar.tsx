@@ -4,7 +4,7 @@ import { Home, FolderOpen, Info, Book } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="z-2 fixed flex justify-around items-center w-full h-15 bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-lg">
+    <nav className="z-2 fixed flex justify-around items-center w-full h-15 bg-[#f8f2e7]/80 backdrop-blur-xl border-b border-[#cdbda6] shadow-lg">
       <h1>
         RealDzolat
       </h1>
@@ -35,10 +35,10 @@ export default function Navbar() {
         render={<Link href="/contact" />}
         className="
         rounded-full
-        bg-gradient-to-r from-[#ea4a25] to-[#6a1810]
-        text-white
+        bg-gradient-to-r from-[#c6532f] to-[#8f3824]
+        text-[#fffaf1]
         border-0
-        shadow-[0_0_20px_rgba(253,207,88,0.45)]
+        shadow-[0_0_20px_rgba(198,83,47,0.24)]
         transition-shadow">
         Contact
       </Button>

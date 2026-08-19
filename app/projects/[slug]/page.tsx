@@ -30,7 +30,7 @@ export default async function ProjectPage({
 
   return (
     <main className="min-h-screen pt-24 px-13">
-      <article className="pt-16 prose prose-invert max-w-none px-32">
+      <article className="pt-16 prose prose-stone max-w-none px-32">
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </article>
     </main>

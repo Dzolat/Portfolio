@@ -4,8 +4,8 @@ export default function Profile()
 {
   return (
     <div className="shrink-0">
-          <div className="w-[320px] rounded-3xl bg-white p-5">
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#FF0000] to-[#FDCF58]">
+          <div className="w-[320px] rounded-3xl bg-[#f8f2e7] p-5">
+            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#c6532f] to-[#d7a34b]">
               <Image
                 src="/avatar.png"
                 alt="RealDzolat"
@@ -15,8 +15,8 @@ export default function Profile()
               />
             </div>
 
-            <h2 className="mt-5 text-3xl font-bold text-gray-900">@RealDzolat</h2>
-            <p className="text-black/60">Developer</p>
+            <h2 className="mt-5 text-3xl font-bold text-[#241c17]">@RealDzolat</h2>
+            <p className="text-[#74675b]">Developer</p>
           </div>
         </div>
     )

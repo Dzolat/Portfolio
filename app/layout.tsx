@@ -36,9 +36,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         inter.variable,
       )}
     >
-      <body className="dark min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col">
         <div className="fixed inset-0 -z-10">
-          <div className="absolute inset-0 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat blur-md scale-110" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_12%,rgba(198,83,47,0.14),transparent_28%),radial-gradient(circle_at_86%_82%,rgba(41,72,61,0.10),transparent_30%),linear-gradient(135deg,#f4ecdd_0%,#e8dcc8_52%,#efe4d2_100%)]" />
         </div>
         <Navbar />
         {children}

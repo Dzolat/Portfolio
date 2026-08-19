@@ -9,30 +9,30 @@ const skills = {
 export default async function AboutPage() {
   return (
     <main className="relative min-h-screen overflow-hidden px-6 pt-24">
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[120px]" />
-      <div className="pointer-events-none absolute top-72 right-0 h-72 w-72 rounded-full bg-orange-500/5 blur-[100px]" />
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-[#c6532f]/10 blur-[120px]" />
+      <div className="pointer-events-none absolute top-72 right-0 h-72 w-72 rounded-full bg-[#29483d]/5 blur-[100px]" />
 
       <section className="relative mx-auto flex max-w-7xl flex-row items-center gap-16 pt-16 pb-4">
         <div className="flex max-w-3xl flex-col">
-          <h1 className="mt-4 text-5xl font-bold tracking-tight text-white">
+          <h1 className="mt-4 text-5xl font-bold tracking-tight text-[#241c17]">
             Hey! I&apos;m{" "}
-            <span className="bg-gradient-to-r from-orange-400 to-orange-200 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#b74628] to-[#d88942] bg-clip-text text-transparent">
               RealDzolat.
             </span>
           </h1>
 
-          <p className="mt-3 flex items-center gap-x-2 gap-y-1 text-lg text-zinc-400">
-            <span className="font-medium text-zinc-200">Alan Stec</span>
-            <span className="text-zinc-600">|</span>
+          <p className="mt-3 flex items-center gap-x-2 gap-y-1 text-lg text-[#74675b]">
+            <span className="font-medium text-[#392b22]">Alan Stec</span>
+            <span className="text-[#a88e72]">|</span>
             <span>16 years old</span>
-            <span className="text-zinc-600">|</span>
+            <span className="text-[#a88e72]">|</span>
             <span>developer from Lublin, Poland</span>
           </p>
 
-          <div className="mt-10 space-y-6 text-[17px] leading-8 text-zinc-300">
+          <div className="mt-10 space-y-6 text-[17px] leading-8 text-[#51463d]">
             <p>
               I&apos;m mostly focused on{" "}
-              <span className="font-semibold text-white">C++</span> and
+              <span className="font-semibold text-[#241c17]">C++</span> and
               full-stack web development. I started programming early in my
               life, but only got into it later when I began experimenting with
               web development, Lua and building software.
@@ -40,7 +40,7 @@ export default async function AboutPage() {
 
             <p>
               I&apos;ve worked with{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-[#241c17]">
                 C, C++, C#, Next.js, React, TypeScript, JavaScript, Luau, SQL Python, Electron and PowerShell
               </span>
               . I like learning new tools by actually using them in projects
@@ -49,7 +49,7 @@ export default async function AboutPage() {
 
             <p>
               My goal is to become a{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-[#241c17]">
                 full-stack software engineer
               </span>{" "}
               who can build complete products.
@@ -61,7 +61,7 @@ export default async function AboutPage() {
                 href="https://github.com/Celestial-Core-Official"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-orange-400"
+                className="font-semibold text-[#b74628]"
               >
                 Celestial Core
               </a>
@@ -75,9 +75,9 @@ export default async function AboutPage() {
               works, I usually end up digging into it until I do.
             </p>
 
-            <p className="text-zinc-400">
+            <p className="text-[#74675b]">
               Outside programming, I&apos;m usually listening to rock and metal,
-              especially <span className="text-white">AC/DC</span>, or at the
+              especially <span className="text-[#241c17]">AC/DC</span>, or at the
               gym. Java and I are currently not on speaking terms.
             </p>
           </div>
@@ -131,7 +131,7 @@ export default async function AboutPage() {
           <div className="mt-8 flex flex-wrap gap-2">
             {Object.entries(skills).map(([category, items]) => (
               <div key={category} className="mb-4">
-                <p className="mb-2 text-sm font-semibold text-zinc-400 capitalize">
+                <p className="mb-2 text-sm font-semibold text-[#74675b] capitalize">
                   {category}
                 </p>
 
@@ -139,7 +139,7 @@ export default async function AboutPage() {
                   {items.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1 text-sm text-zinc-300"
+                      className="rounded-full border border-[#cdbda6] bg-[#f8f2e7]/70 px-3 py-1 text-sm text-[#51463d]"
                     >
                       {skill}
                     </span>

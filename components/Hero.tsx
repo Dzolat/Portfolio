@@ -14,15 +14,15 @@ export default function Hero() {
 
         {/* Right side */}
         <div className="flex flex-col">
-          <h1 className="text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-black tracking-tight text-white">
+          <h1 className="text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-black tracking-tight text-[#241c17]">
             SOFTWARE
           </h1>
 
-          <h1 className="text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-black tracking-tight text-white/15">
+          <h1 className="text-[clamp(4rem,8vw,8rem)] leading-[0.85] font-black tracking-tight text-[#a88e72]">
             DEVELOPER
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/50">
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-[#74675b]">
             I build software, web apps and games.
           </p>
 

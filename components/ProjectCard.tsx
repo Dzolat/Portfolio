@@ -17,7 +17,7 @@ export default function ProjectCard({
     path
 }: ProjectCardProps) {
   return (
-    <Card>
+    <Card className="bg-gradient-to-r from-[#f8f2e7] to-[#eadcc7]">
         <CardHeader>
             <CardTitle>{title}</CardTitle>
             <CardDescription>{description}</CardDescription>
